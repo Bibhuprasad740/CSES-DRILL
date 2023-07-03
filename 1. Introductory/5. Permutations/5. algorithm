@@ -1,0 +1,16 @@
+start:
+    Take n as input
+    Take an empty queue q
+    Iterate i from 1 to n:
+        if i is odd add i to the answer list
+        else push i into queue q
+    Iterate for every element in the queue:
+        Get the front element 
+        if front - last_element_of_answer_list is greater than 1
+            add front into the anser list
+            pop front from queue
+        else :
+            Print "NO SOLUTION"
+            goto end
+    print the anser list
+end:

@@ -1,0 +1,8 @@
+start:
+    take n as input
+    while n != 1 run a loop:
+        add "n" to your answer collection
+        if n is odd n <- (n * 3 + 1)
+        otherwise n <- n / 2
+    return answer collection
+end: 

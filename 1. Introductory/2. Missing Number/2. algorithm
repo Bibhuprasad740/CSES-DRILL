@@ -1,0 +1,9 @@
+start:
+    xorr <- 0 (because anything xor with 0 remains same)
+    declare n
+    take n as input
+    from 1 to n xor every number with xorr (a^b^c^d^e)
+    then take n - 1 inputs
+    xor them with xorr (a^b^c^e)
+    the missing number remains at the end as a ^ a = 0 (d)
+end:

@@ -1,0 +1,15 @@
+start:
+    take str as input
+    overall_max <- INT_MIN
+    count <- 1;
+    prev_char <- first character of the string
+    loop from the second character to the end character:
+        if current character equals prev_char 
+            then increment count;
+        otherwise
+            check if we found a maximum value
+            count reset to 1
+            prev_char = current character
+    check if count > maximum
+    return maximum
+end:
