@@ -1,0 +1,23 @@
+start:
+    Take t as input
+    Take t queries as input
+    for every query in the queries do: 
+
+        Go to n * n square (where n is max of row and col)
+            find the corner value by the formula (n * n - 1) + 1
+        
+        if row equals column, corner value is the answer for this query, so add corner value to the answer list
+        else if row is smaller than n
+            if n is even,
+                largest number starts from the left of that row, so decrement the corner value by n - row times 
+            otherwise 
+                largest number starts from the top of that column, so increment the corner value by n - row times
+        else if col is smaller
+            if n is even,
+                largest number starts from the left of that row, so increment the corner value by n - col times 
+            otherwise 
+                largest number starts from the top of that column, so decrement the corner value by n - col times
+        add corner value to the answer list
+        
+    5. return answer list;
+end:

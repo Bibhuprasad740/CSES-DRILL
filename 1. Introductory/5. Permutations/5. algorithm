@@ -6,7 +6,9 @@ start:
         else push i into queue q
     Iterate for every element in the queue:
         Get the front element 
-        if front - last_element_of_answer_list is greater than 1
+        size <- size of answer list
+        difference <- absolute difference between front and last_element_of_answer_list
+        if there is no last element or difference greater than 1
             add front into the anser list
             pop front from queue
         else :
